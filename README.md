@@ -1,9 +1,7 @@
-Certainly! Here is a sample `README.md` file for your repository:
-
 ```markdown
 # Auto Installer for 0g Storage Node
 
-This repository contains an automated installer script to set up and run the 0g Storage Node service on an Ubuntu server. The script installs necessary tools, clones the required GitHub repository, builds the project, and sets up a systemd service to keep the node running continuously.
+This repository contains an automated installer script to set up and run the 0g Storage Node service on an Ubuntu server. The script installs the necessary tools, clones the required GitHub repository, builds the project, and sets up a systemd service to keep the node running continuously.
 
 ## Prerequisites
 
@@ -17,7 +15,7 @@ Follow these steps to install and set up the 0g Storage Node service:
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/your-github-username/your-repo-name.git
+   git clone https://github.com/Srv8/0g-auto
    ```
 
 2. **Navigate to the Cloned Repository:**
@@ -29,13 +27,13 @@ Follow these steps to install and set up the 0g Storage Node service:
 3. **Make the Script Executable:**
 
    ```bash
-   chmod +x install_and_setup.sh
+   chmod +x setup.sh
    ```
 
 4. **Run the Script:**
 
    ```bash
-   ./install_and_setup.sh
+   ./setup.sh
    ```
 
 The script will:
@@ -79,6 +77,29 @@ WantedBy=multi-user.target
 ```
 
 This service ensures that the 0g Storage Node runs continuously and restarts automatically if it crashes.
+
+## Start and Stop the Service
+
+To reload the services
+```bash
+sudo systemctl daemon-reload
+```
+To Enable the service (script does this)
+```bash
+sudo systemctl enable zgs_node.service
+```
+To Start the Service (Script Does this)
+```bash
+sudo systemctl start zgs_node.service
+```
+To Stop the Service (During Updates)
+```bash
+sudo systemctl stop zgs_node.service
+```
+To View Status
+```bash
+sudo systemctl status zgs_node.service
+```
 
 ## Logs
 
