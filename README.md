@@ -1,7 +1,8 @@
 ```markdown
 # Auto Installer for 0g Storage Node
 
-This repository contains an automated installer script to set up and run the 0g Storage Node service on an Ubuntu server. The script installs the necessary tools, clones the required GitHub repository, builds the project, and sets up a systemd service to keep the node running continuously.
+This repository contains an automated installer script to set up and run the 0g Storage Node service on an Ubuntu server.
+The script installs the necessary tools, clones the required GitHub repository, builds the project, and sets up a systemd service to keep the node running continuously.
 
 ## Prerequisites
 
