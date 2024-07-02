@@ -19,6 +19,8 @@ version=${version:-v0.3.2}
 git clone -b $version https://github.com/0glabs/0g-storage-node.git
 
 cd 0g-storage-node
+git fetch
+git checkout tags/$version
 git submodule update --init
 
 # Build the project in release mode
