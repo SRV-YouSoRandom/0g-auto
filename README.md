@@ -12,6 +12,7 @@ The script installs the necessary tools, clones the required GitHub repository, 
 ## Installation
 
 Follow these steps to install and set up the 0g Storage Node service:
+```
 
 1. **Clone the Repository:**
 
